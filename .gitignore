@@ -1,5 +1,16 @@
 .venv
-venv
+venv/
+env/
 db.sqlite3
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+.DS_store
+.idea
+Thumbs.db
+
+.env
+
+*.sqlite3
