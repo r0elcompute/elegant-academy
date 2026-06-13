@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Academy Portal</title>
+    <link rel="stylesheet" href="{% static 'portal/static/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>🏛️ Elegant Academy Admin Dashboard</h1>
+        <p>Live Data Stream from Django REST Framework Engine</p>
+    </header>
+
+    <main>
+        <div class="stats-bar">
+            <span id="student-count">Total Students: Loading...</span>
+        </div>
+
+        <div id="student-grid" class="grid-container">
+            </div>
+    </main>
+
+    <script src="{% static 'portal/static/app.js' %}"></script>
+</body>
+</html>

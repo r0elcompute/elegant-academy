@@ -20,3 +20,6 @@ def student_list_api(request):
 
     # 3. Send the clean JSON data back to the browser
     return Response(serializer.data)
+
+def dashboard_home(request):
+    return render(request, 'portal/index.html')
