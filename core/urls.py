@@ -15,8 +15,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
+    # 1. The clean, standard Django admin route
     path('admin/', admin.site.urls),
+    
+    # 2. Your custom API route pointing to your portal app
+    path('api/', include('apps.portal.urls')),
 ]
